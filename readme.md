@@ -3,6 +3,8 @@
 Stored here (so I can work on it from multiple machines)
 http://github.com/apdunston/gilded-rose.git
 
+I've left Item and GildedRose classes with their original APIs. That wasn't explicit in the instructions, but if I were adding to an existing system, I wouldn't want to change how it presented to the outside world. Technically, I could have subclassed Item and done some clever things with the initialize path so Item.new would still work, but I find that getting too clever makes it hard to maintain code. So I went with a decorator pattern instead. I think it's lovely.
+
 == References
 
 http://stackoverflow.com/questions/9017158/running-ruby-unit-tests-with-rake
